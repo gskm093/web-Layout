@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  background: rgba(255, 255, 255, 1);
+  height: 70vh;
+  width: 20vw;
+}
+.sidebar-icon {
+  height: 20px;
+  width: 25px;
+  margin-left: 21px;
+  margin-top: 20px;
+}
+.sidebar-icon:hover{
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+.nav-bar-settings {
+  height: 10vh;
+  width: 100vw;
+  background-color: white;
+}
+.main-contnet {
+  height: 90vh;
+  width: 100%;
+  background-color: rgba(230, 231, 239, 1);
+  padding-top: 15px;
+  padding-right: 10px;
+}
+.user-img {
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  right: 20px;
+}
+.logo-settings {
+  height: 18.879432678222656px;
+  width: 18.879432678222656px;
+  margin: 4px;
+}
+.dashboard-heading {
+  margin: 15px 30px;
+}
+.nav-bar-settings button {
+  margin-right: 15px;
+}
+.nav-bar-settings img {
+  margin-right: 15px;
+}
+.btn-section {
+  margin: 20px;
+  
+}
+.box {
+  height: 96px;
+  width: 257px;
+  margin: 20px;
+  border-radius: 9.56px;
+}
+.pacman-icon {
+  height: 52.59px;
+  width: 51.04px;
+}
+.packman-deatis {
+  margin-left: 30px;
+  color: white;
+  font-weight: 700;
+}
+.pacman-deatis span {
+  margin-bottom: 0;
+}
+.pill-shape {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.box-1 {
+  background-color: rgba(6, 139, 247, 1);
+}
+.box-2 {
+  background-color: rgba(254, 85, 111, 1);
+}
+.box-3 {
+  background-color: rgba(240, 141, 25, 1);
+}
+.graph-size {
+  height: 431px;
+  width: 850px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.box-shadow-setting {
+  box-shadow: 5px 10px 9px 4px rgb(196 196 196);
+  z-index: 2;
+}
+.nav-btn {
+  background-color: rgba(243, 243, 243, 1);
+  position: absolute;
+  right: 55px;
+  width: 132px;
+  height: 40px;
+  text-align: center;
+}
+.mangeproj-icon {
+  height: 16px;
+  width: 16px;
+  margin-top: 5px;
+}
+.userproj-icon {
+  height: 16px;
+  width: 16px;
+  margin-top: 5px;
+}
+.dashbord-btn {
+  background-color: rgba(6, 139, 247, 1);
+  height: 38px;
+  width: 176px;
+  border-radius: 7px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.user-access-btn {
+  height: 38px;
+  width: 176px;
+  border-radius: 7px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 5px;
+  transition: 0.2s;
+}
+.vr-setting {
+  display: flex;
+  justify-content: start;
+}
+.pacman-icon:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@media screen and (min-width: 481px) and (max-width: 950px) {
+    .nav-bar-settings {
+        height: 80px;
+        width: 100%;
+        margin-top: 4px;
+        /* padding: 38px; */
+      }
+      .nav-btn {
+        display: none;
+      }
+      .vr-setting {
+        display: block;
+      }
+      .box {
+        height: 96px;
+        width: 100%;
+        margin: 4px;
+        border-radius: 9.56px;
+      }
+      .graph-size {
+        height: 270px;
+        width: 100%;
+        margin-left: 5px;
+        border-radius: 10px;
+      }
+      .user-table {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-size: 9px;
+      }
+      .edit-btn {
+        background-color: rgba(233, 245, 255, 1);
+        color: rgba(6, 139, 247, 1);
+        margin-right: 5px;
+        height: 32px;
+        font-size: 10px;
+        width: 40px;
+        /* align-items: center; */
+      }
+      .delete-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 234, 237, 1);
+        color: rgba(255, 55, 85, 1);
+        /* margin-right: 5px; */
+        height: 32px;
+        width: 40px;
+        font-size: 10px;
+      }
+      .profile-container {
+        height: 401px;
+        width: 285px;
+        left: 70px;
+        top: 60px;
+        border-radius: 5px;
+        z-index: 3;
+        background-color: rgb(255, 255, 255);
+        transition: 0.2s;
+        box-shadow: 19px 0px 50px -2px rgb(196 196 196);
+      }
+      .background-img-setting {
+        height: 114px;
+        width: 285px;
+        border-radius: 5px;
+      }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .nav-bar-settings {
+    height: 80px;
+    width: 100%;
+    margin-top: 4px;
+    /* padding: 38px; */
+  }
+  .nav-btn {
+    display: none;
+  }
+  .vr-setting {
+    display: block;
+  }
+  .box {
+    height: 96px;
+    width: 100%;
+    margin: 4px;
+    border-radius: 9.56px;
+  }
+  .graph-size {
+    height: 270px;
+    width: 100%;
+    margin-left: 5px;
+    border-radius: 10px;
+  }
+  .user-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 9px;
+  }
+  .edit-btn {
+    background-color: rgba(233, 245, 255, 1);
+    color: rgba(6, 139, 247, 1);
+    margin-right: 5px;
+    height: 32px;
+    font-size: 10px;
+    width: 40px;
+    /* align-items: center; */
+  }
+  .delete-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 234, 237, 1);
+    color: rgba(255, 55, 85, 1);
+    /* margin-right: 5px; */
+    height: 32px;
+    width: 40px;
+    font-size: 10px;
+  }
+  .profile-container {
+    height: 401px;
+    width: 285px;
+    left: 70px;
+    top: 60px;
+    border-radius: 5px;
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    transition: 0.2s;
+    box-shadow: 19px 0px 50px -2px rgb(196 196 196);
+  }
+  .background-img-setting {
+    height: 114px;
+    width: 285px;
+    border-radius: 5px;
+  }
+}

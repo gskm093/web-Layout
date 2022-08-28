@@ -1,0 +1,129 @@
+boody {
+    font-family: Rubik;
+    height: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .signup-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .login-form-contanier{
+    width: 50%;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    min-height: 100%;
+    min-width: 695px;
+    width: 40%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .custom-img-settings1 {
+    min-height: 100%;
+    min-width: 695px;
+    width: 695px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo-settings-signup {
+    height: 30px;
+    width: 30px;
+  }
+  .access-type-settings2 {
+    padding-bottom: 30px;
+  }
+  .access-type-settings2 h5 {
+    color: #068bf7;
+  }
+  .access-type-settings2 p {
+    color: rgba(129, 129, 129, 1);
+  }
+  .text-end p {
+    color: #068bf7;
+  }
+  .form-to-postion {
+    padding: 10px;
+    margin: 130px 205px 20px 0px;
+  }
+  h2 {
+    padding-left: 10px;
+  }
+  .signup-heading {
+    padding-bottom: 30px;
+  }
+  .eye-icon-reg{
+    height: 14px;
+    width: 20px;
+    position: absolute;
+    top: 545px;
+    left: 1250px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 950px) {
+    .login-form-contanier {
+      width: 50%;
+      z-index: 1;
+      background-color: #ffffff;
+      position: fixed;
+      left: 15%;
+      top: 4%;
+      min-height: 90%;
+      min-width: 600px;
+      height: auto;
+      border-radius: 10px;
+  }
+     .custom-img-settings1 {
+      min-height: 100%;
+      min-width: 695px;
+      width: 695px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .signup-heading {
+      padding-bottom: 30px;
+      /* padding-left: 11px; */
+      justify-content: end;
+  }
+  }
+  @media screen and (min-width:320px) and (max-width: 480px){
+    .login-form-contanier {
+      width: 22%;
+      z-index: 1;
+      background-color: #ffffff;
+      position: fixed;
+      left: -3%;
+      top: -1%;
+      min-height: 105%;
+      min-width: 600px;
+      height: auto;
+      border-radius: 10px;
+  }
+  .signup-heading {
+    padding-bottom: 30px;
+    padding-left: 12px;
+  }
+  .access-type-settings2{
+    padding-bottom: 30px;
+    padding-left: 12px;
+  }
+  .form-res-size {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+  }
+  

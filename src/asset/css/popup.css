@@ -1,0 +1,57 @@
+body.active-modal{
+    overflow-y: hidden;
+}
+.btn-modal{
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal1, .overlay1{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 19;
+}
+.overlay1{
+    background-color: rgba(49, 49, 49, 0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% );
+    line-height: 2.5;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 380px;
+
+}
+.cross-icon{
+    height: 13px;
+width: 13px;
+
+
+}
+.add-new-user-heading{
+    font-weight: bold;
+    padding-top: 2px;
+}
+.invite-btn {
+    padding-top: 30px;
+}
+.dropdown-btn{
+    border: 1px solid rgba(231, 231, 231, 1);
+}
+.toggle-icon{
+
+        position: absolute;
+        left: 310px;
+
+}
