@@ -18,13 +18,13 @@ function Dashboard() {
     setPageDataShow(val)
   }
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column main-layout">
        <Navigation showHideSidebar={showHideSidebar}></Navigation>
        {console.log("pageDataShow",pageDataShow)}
        <div className="nav-main-settings d-flex flex-row">
         {sidebar===true? <Sidebar pageDataShow={viewOption} currentVal={pageDataShow}></Sidebar>:""}
        {
-        pageDataShow ==="dashboard"? <MainContent></MainContent> : <ManageUsers></ManageUsers>
+        pageDataShow ==="dashboard"? <MainContent graph={sidebar}></MainContent> : <ManageUsers ></ManageUsers>
        }
        
       

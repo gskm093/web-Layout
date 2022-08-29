@@ -1,51 +1,46 @@
 import { useState } from "react";
 import "../asset/css/login.css";
 import Dashboard from "./Dashboard";
-import Registration from './Registration';
+import Registration from "./Registration";
 function Login() {
-
-  let [data,setData] = useState([{name:"surya",password:"king"}])
+  let [data, setData] = useState([{ name: "surya", password: "king" }]);
   const [initialValue, setInitialValue] = useState({
     name: "",
-    password:""
+    password: "",
   });
-  const[loginStatus,setLoginStatus] = useState("login");
+  const [loginStatus, setLoginStatus] = useState("login");
 
-  function login(){
-    let findUser = data.find((u)=>u.name===initialValue.name);
-    console.log("FIND USER",findUser);
-    if(!findUser){
+  function login() {
+    let findUser = data.find((u) => u.name === initialValue.name);
+    console.log("FIND USER", findUser);
+    if (!findUser) {
       setLoginStatus("register");
-    }
-    else{
+    } else {
       setLoginStatus("dashboard");
     }
-    
   }
 
   function changeValue(e) {
     const { currentTarget: input } = e;
     const name = input.name;
     const value = input.value;
-      setInitialValue({
-        name: name === "name" ? value : initialValue.name,
-        password:name==="password"? value:initialValue.password
-      });
+    setInitialValue({
+      name: name === "name" ? value : initialValue.name,
+      password: name === "password" ? value : initialValue.password,
+    });
   }
 
-  function registerUser(newObj){
+  function registerUser(newObj) {
     const person = JSON.parse(newObj);
     data.push(person);
-    setData((arr)=>[...arr]);
-    console.log("login-success",data)
+    setData((arr) => [...arr]);
+    console.log("login-success", data);
     setLoginStatus("login");
   }
 
-  return (
-   
-    loginStatus === "login"? 
+  return loginStatus === "login" ? (
     <div className="row login-res-setting">
-      {console.log('Login Status',loginStatus)}
+      {console.log("Login Status", loginStatus)}
       <div className="">
         <img
           className="custom-img-settings1 "
@@ -90,19 +85,27 @@ function Login() {
                 Password
               </label>
               <div className="d-flex">
-              <img className="eye-icon" src={require('../asset/images/eye.png')}></img>
-              <input
-                type="password"
-                name="password"
-                value={initialValue.password}
-                onChange={(e) => changeValue(e)}
-                className="form-control"
-                id="exampleInputPassword1"
-              />
+                <img
+                  className="eye-icon"
+                  src={require("../asset/images/eye.png")}
+                  alt="eyeicon"
+                ></img>
+                <input
+                  type="password"
+                  name="password"
+                  value={initialValue.password}
+                  onChange={(e) => changeValue(e)}
+                  className="form-control"
+                  id="exampleInputPassword1"
+                />
               </div>
             </div>
             <div className="mb-3">
-              <button type="submit" class="btn btn-primary form-control" onClick={()=>login()}>
+              <button
+                type="submit"
+                class="btn btn-primary form-control"
+                onClick={() => login()}
+              >
                 Sign In
               </button>
             </div>
@@ -112,7 +115,13 @@ function Login() {
           </div>
         </div>
       </div>
-    </div> : loginStatus==="register" ? <Registration registerUser={registerUser}></Registration> : loginStatus==="dashboard"? <Dashboard></Dashboard> : ""
+    </div>
+  ) : loginStatus === "register" ? (
+    <Registration registerUser={registerUser}></Registration>
+  ) : loginStatus === "dashboard" ? (
+    <Dashboard></Dashboard>
+  ) : (
+    ""
   );
 }
 

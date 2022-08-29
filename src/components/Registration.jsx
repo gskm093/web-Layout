@@ -1,27 +1,26 @@
 import { useState } from "react";
 import "../asset/css/registration.css";
 function Signup(props) {
-
   const [initialValue, setInitialValue] = useState({
     name: "",
-    email:"",
-    password:""
+    email: "",
+    password: "",
   });
 
   function changeValue(e) {
     const { currentTarget: input } = e;
     const name = input.name;
     const value = input.value;
-      setInitialValue({
-        name: name === "name" ? value : initialValue.name,
-        email: name === "email" ? value : initialValue.email,
-        password:name==="password"? value:initialValue.password
-      });
+    setInitialValue({
+      name: name === "name" ? value : initialValue.name,
+      email: name === "email" ? value : initialValue.email,
+      password: name === "password" ? value : initialValue.password,
+    });
   }
 
-  function register(){
+  function register() {
     const veryTemp = JSON.stringify(initialValue);
-     props.registerUser(veryTemp);
+    props.registerUser(veryTemp);
   }
 
   return (
@@ -53,7 +52,7 @@ function Signup(props) {
           <div className="form-setting">
             <div className="mb-3 form-res-size">
               <label for="exampleInputEmail1" className="form-label">
-              Enter your name
+                Enter your name
               </label>
               <input
                 type="text"
@@ -67,7 +66,7 @@ function Signup(props) {
             </div>
             <div className="mb-3 form-res-size">
               <label for="exampleInputPassword1" class="form-label">
-              Enter email
+                Enter email
               </label>
               <input
                 type="text"
@@ -83,19 +82,27 @@ function Signup(props) {
                 Password
               </label>
               <div className="d-flex">
-              <img className="eye-icon-reg" src={require('../asset/images/eye.png')}></img>
-              <input
-                type="password"
-                name="password"
-                value={initialValue.password}
-                onChange={(e) => changeValue(e)}
-                className="form-control"
-                id="exampleInputPassword1"
-              />
+                <img
+                  className="eye-icon-reg"
+                  src={require("../asset/images/eye.png")}
+                  alt="eye"
+                ></img>
+                <input
+                  type="password"
+                  name="password"
+                  value={initialValue.password}
+                  onChange={(e) => changeValue(e)}
+                  className="form-control"
+                  id="exampleInputPassword1"
+                />
               </div>
             </div>
             <div className="mb-3 form-res-size">
-              <button type="submit" class="btn btn-primary form-control" onClick={()=>register()}>
+              <button
+                type="submit"
+                class="btn btn-primary form-control"
+                onClick={() => register()}
+              >
                 Sign In
               </button>
             </div>

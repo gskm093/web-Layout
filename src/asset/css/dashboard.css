@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+.main-layout{
+  position: fixed;
+}
 .sidebar {
   background: rgba(255, 255, 255, 1);
   height: 70vh;
@@ -16,6 +19,7 @@
 .sidebar-icon:hover{
     transform: rotate(90deg);
     transition: 0.2s;
+    cursor: pointer;
 }
 .nav-bar-settings {
   height: 10vh;
@@ -132,6 +136,10 @@
   margin-top: 5px;
   transition: 0.2s;
 }
+.btn-common-effect :hover{
+   cursor: pointer;
+}
+
 .vr-setting {
   display: flex;
   justify-content: start;
@@ -154,6 +162,13 @@
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
+  .box-graph {
+    background: white;
+    padding: 35px 0px;
+    margin-left: 7px;
+    margin-top: 9px;
+    border-radius: 10px;
+}
 @media screen and (min-width: 481px) and (max-width: 950px) {
     .nav-bar-settings {
         height: 80px;
@@ -222,6 +237,9 @@
         width: 285px;
         border-radius: 5px;
       }
+      .main-layout {
+        position: static;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .nav-bar-settings {
@@ -291,4 +309,8 @@
     width: 285px;
     border-radius: 5px;
   }
+  .main-layout{
+    position: static;
+  }
+
 }

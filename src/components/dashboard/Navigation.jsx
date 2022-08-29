@@ -17,6 +17,7 @@ function Navigation(props) {
           className="sidebar-icon"
           onClick={props.showHideSidebar}
           src={require("../../asset/images/Sidebar.png")}
+          alt="abc"
         ></img>
         <div className="dashboard-heading d-flex">
           <img

@@ -6,7 +6,7 @@ function Sidebar(props) {
   return (
       <div className="box-shadow-setting">
         <div className="btn-section d-flex flex-column">
-          <div className={props.currentVal === "dashboard"?"dashbord-btn d-flex justify-content-around" : "user-access-btn d-flex justify-content-around"} onClick={()=>props.pageDataShow("dashboard")}>
+          <div className={props.currentVal === "dashboard"?"dashbord-btn d-flex justify-content-around btn-common-effect" : "user-access-btn d-flex justify-content-around btn-common-effect"} onClick={()=>props.pageDataShow("dashboard")}>
             {
               props.currentVal === "dashboard"? <img
               className="mangeproj-icon"
@@ -23,7 +23,7 @@ function Sidebar(props) {
           </div>
            
             <div
-              className={props.currentVal==="userAccess"?"dashbord-btn d-flex justify-content-around":"user-access-btn d-flex justify-content-around"}
+              className={props.currentVal==="userAccess"?"dashbord-btn d-flex justify-content-around btn-common-effect":"user-access-btn d-flex justify-content-around btn-common-effect"}
               onClick={()=>props.pageDataShow("userAccess")}
             >
               {
